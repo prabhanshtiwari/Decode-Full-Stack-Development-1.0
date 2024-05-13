@@ -1,0 +1,88 @@
+/* Text Colors */
+
+#example-1{
+    /* Named color */
+    color: red;
+}
+#example-2{
+    /* RGB */
+    color: rgb(55, 155, 255);
+}
+#example-3{
+    /* RGBa */
+    color: rgba(255, 255, 100, 0.8);
+}
+#example-4{
+    /* Hexadecimal notation */
+    color: #00ff00;
+
+}
+#example-5{
+    /* hsl */
+    color: hsl(16, 88%, 54%);
+}
+#example-6{
+    /* hsla */
+    color: hsla(12, 100%, 20%, 0.5);
+}
+
+/* setting multiple colors in single paragraph can be done by using span tag in html */
+p{
+    color: blue;
+}
+.red-text{
+    color: red;
+}
+/* text-decoration-line -> to add decorative line on text */
+
+#example-7{
+    text-decoration-line: underline;
+}
+#example-8{
+    text-decoration-line: overline;
+}
+#example-9{
+    text-decoration-line: line-through;
+}
+
+/* 
+text-align -> this property is used for alignment of text in css
+the values that can be for text-align are center, right, left and justify
+left is the default value, the text will be aligned to left 
+*/
+
+#example-10{
+    text-align: center;
+}
+#example-11{
+    text-align: left;
+}
+#example-12{
+    text-align: right;
+}
+#example-13{
+    text-align: justify;
+}
+
+/* 
+Text transformation is to make a text to uppercase or lowercase or to capitalize using CSS.
+We have "text-transform" to achieve this in CSS.
+The value for these property are lowercase, uppercase and capitalize
+*/
+
+#example-14{
+    text-transform: uppercase;
+}
+#example-15{
+    text-transform: lowercase;
+}
+#example-16{
+    text-transform: capitalize;
+}
+
+
+
+
+
+
+
