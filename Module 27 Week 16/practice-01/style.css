@@ -80,6 +80,92 @@ The value for these property are lowercase, uppercase and capitalize
     text-transform: capitalize;
 }
 
+/* 
+Text spacing can be achieved by these properties:
+letter-spacing
+text-indent
+line-height
+word-spacing
+white-spaces
+*/
+
+/* 
+letter-spacing -> this property is used to specify the space between letters or characters in a text.
+Default value is 0.
+*/
+
+.tight{
+    letter-spacing: -3px;
+}
+.normal{
+    letter-spacing: 0;
+}
+.medium{
+    letter-spacing: 3px;
+}
+.loose{
+    letter-spacing: 6px;
+}
+
+/* 
+text-indent -> this property is used to give indentation to the text
+*/
+#text-indent{
+    text-indent: 60px;
+}
+
+/* 
+line-height -> this property is used to give space between lines
+*/
+#line-height{
+    line-height: 2.5;
+}
+
+/* 
+word-spacing -> this property is used to give space between words in a text.
+*/
+#word-spacing{
+    word-spacing: 20px;
+}
+
+/* 
+white-space -> this property is used to specify how content in an element should be displayed. It is used to handle white spaces inside an element.
+
+There are some property values that are used with CSS white-space property that oyu should know.
+
+normal: This is default value. In this, the text is wrapped when necessary, and the sequences of white space will collapse into a single whitespace.
+
+nowrap: Sequences of white spaces will collapsse into a single whitespace. In this value, the text will never wrap to the next line and only break when the <br> tag is used
+
+pre: Whitespace is preserved by the browser. It acts like an html <pre> tag. The text will only wrap on line breaks.
+ 
+*/
+.normal{
+    white-space: normal;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.pre{
+    white-space: pre;
+}
+
+/* 
+text-shadow -> this property is used to add shadow to text.
+Each shadow is described by some combination of X-offsets & Y offsets from the text, blur radius, and color.
+
+text-shadow: offset-x | offset-y | blur-radius | color
+
+*/
+
+h1{
+    text-shadow: 2px 2px 2px red
+}
+
+
+
+
+
 
 
 
