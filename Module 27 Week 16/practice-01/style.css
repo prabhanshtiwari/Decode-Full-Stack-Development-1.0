@@ -162,6 +162,120 @@ h1{
     text-shadow: 2px 2px 2px red
 }
 
+/* 
+direction -> this property in css is a fundamental styling attribute used to control the text direction within an HTML element. 
+It plays a crucial role in rendering texxt correctly, especially when dealing with languages and scripts that have different writing directions. 
+This property offers two main values.
+1. ltr(Left-to-Right): This is the default value and is used for languages that are written from left to right such as English, Spanish or French.
+
+2. rtl(Right-to-Left): This value is employed for languages and scripts that are written from right to left, such as Arabic, Hebrew, or Persian.
+
+direction: ltr | rtl
+*/
+
+.ltr-text{
+    direction: ltr; /*Left-to-Right text Direction */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.rtl-text{
+    direction: rtl; /*Left-to-Right text Direction */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* 
+text-overflow -> this property in CSS is used to control how text that overflows the content area of an element is visually displayed.
+It is commonly used when you have text within an element that doesn't fit within it's designated space, such as in a fixed-width containeror a table cell, text-overflow is especially useful for handling long strings of text or overflowing content in a user-friendly way. 
+It can be clipped, display an ellipsis (...), or display a custom string.
+
+Both of the following properties are required for text-overflow.
+white-space: nowrap;
+overflow: hidden;
+
+
+text-overflow: clip | ellipsis | string
+*/
+
+div.a{
+    white-space: nowrap;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: clip;
+    border: 1px solid #000000;
+}
+div.b{
+    white-space: nowrap;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #000000;
+}
+div.a{
+    white-space: nowrap;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: "---";
+    border: 1px solid #000000;
+}
+/* Note : The text-overflow: "string" only works in Firefox */
+
+/* 
+font-family -> this CSS property is used to provide a comma-separated list of font families. 
+It sets the font face for the text contentof an element.
+This property can hold multiple font names as a fallback system, i.e., if one font is unsupported in the browser, then other can be used. The different font-family iss used for making attractive web pages.
+Note: If the font name is more tham one word, it must be in quotation marks, like "Times New Roman".
+
+There are two types of font family names in CSS which are defined below
+
+family-name: It is the name of the font family such as Courier, Arial, Times, etc.
+generic-family: It iss the name off the generic family that includes five categories, which are "serif", "snas-serif", "cursive", "fantasy", and "monospace". It should be placed at last in the list of font family names.
+
+Syntax:
+font-family: family-name|generic-family|initial|inherit;
+
+Let's see the values of the font family property:
+family-name/generic-family: It is the list of font-family names and generic family names.
+initial-it is used to set the property to its default value.
+inherit: it is used to inherit the property from it's parent element.
+*/
+h1{
+    font-family: Arial, sans-serif;
+}
+
+/* 
+font-style -> this property species the style of the font, such as italic or normal
+*/
+
+.italic{
+    font-style: italic;
+}
+.normal{
+    font-style: normal;
+}
+
+/* 
+font-variant ->
+
+
+*/
+
+h1{
+    font-variant:normal;
+}
+h2{
+    font-variant:small-caps;
+}
+
+
+
+
+
+
+
+
 
 
 
