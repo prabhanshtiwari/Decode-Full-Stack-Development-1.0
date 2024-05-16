@@ -1,0 +1,69 @@
+/* Add border */
+
+table,
+td,
+th{
+    border: 1px solid black;
+}
+
+table{
+    border-collapse: collapse; 
+}
+
+
+/* 
+tr{
+    border-bottom: 1px solid black;
+}
+ */
+table{
+    border-collapse: collapse;
+} 
+
+
+th,
+td{
+    width: 200px;
+    padding: 10px;
+    text-align: center;
+} 
+
+
+/* Adding style to rows on hover */
+
+tr:hover{
+    background-color: rgb(188, 88, 88);
+    color: white;
+}
+
+
+/* We can change caption position, using caption-side CSS property
+It can have the following values:
+top(default): Put the caption on the top of the table.
+bottom: Put the caption on the bottom of the table.
+*/
+
+table{
+    border-collapse: collapse;
+    caption-side: bottom;
+}
+
+/* 
+empty-cells -> this property is used when we have empty cells, and we want to hide the border and background of the cells.
+*/
+table{
+    empty-cells: hide;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

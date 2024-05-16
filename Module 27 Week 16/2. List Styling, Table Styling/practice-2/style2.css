@@ -1,0 +1,30 @@
+td, th{
+    border: 1px solid black;
+}
+table{
+    table-layout: fixed;
+    width: 260pxx;
+}
+
+/* 
+border-spacing -> this property is used to addd space between cell borders
+
+border-spacing -> vertical-spacing | horizontal spacing
+
+Note: If we specify only one value, then it will be considered for both vertical & horizontal border spacinng.
+*/
+/* 
+table{
+    border-spacing: 10px 20px;
+}
+ */
+
+
+
+
+
+
+
+
+
+
