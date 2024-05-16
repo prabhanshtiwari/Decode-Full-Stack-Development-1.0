@@ -1,0 +1,288 @@
+/* Text Colors */
+
+#example-1{
+    /* Named color */
+    color: red;
+}
+#example-2{
+    /* RGB */
+    color: rgb(55, 155, 255);
+}
+#example-3{
+    /* RGBa */
+    color: rgba(255, 255, 100, 0.8);
+}
+#example-4{
+    /* Hexadecimal notation */
+    color: #00ff00;
+
+}
+#example-5{
+    /* hsl */
+    color: hsl(16, 88%, 54%);
+}
+#example-6{
+    /* hsla */
+    color: hsla(12, 100%, 20%, 0.5);
+}
+
+/* setting multiple colors in single paragraph can be done by using span tag in html */
+p{
+    color: blue;
+}
+.red-text{
+    color: red;
+}
+/* text-decoration-line -> to add decorative line on text */
+
+#example-7{
+    text-decoration-line: underline;
+}
+#example-8{
+    text-decoration-line: overline;
+}
+#example-9{
+    text-decoration-line: line-through;
+}
+
+/* 
+text-align -> this property is used for alignment of text in css
+the values that can be for text-align are center, right, left and justify
+left is the default value, the text will be aligned to left 
+*/
+
+#example-10{
+    text-align: center;
+}
+#example-11{
+    text-align: left;
+}
+#example-12{
+    text-align: right;
+}
+#example-13{
+    text-align: justify;
+}
+
+/* 
+Text transformation is to make a text to uppercase or lowercase or to capitalize using CSS.
+We have "text-transform" to achieve this in CSS.
+The value for these property are lowercase, uppercase and capitalize
+*/
+
+#example-14{
+    text-transform: uppercase;
+}
+#example-15{
+    text-transform: lowercase;
+}
+#example-16{
+    text-transform: capitalize;
+}
+
+/* 
+Text spacing can be achieved by these properties:
+letter-spacing
+text-indent
+line-height
+word-spacing
+white-spaces
+*/
+
+/* 
+letter-spacing -> this property is used to specify the space between letters or characters in a text.
+Default value is 0.
+*/
+
+.tight{
+    letter-spacing: -3px;
+}
+.normal{
+    letter-spacing: 0;
+}
+.medium{
+    letter-spacing: 3px;
+}
+.loose{
+    letter-spacing: 6px;
+}
+
+/* 
+text-indent -> this property is used to give indentation to the text
+*/
+#text-indent{
+    text-indent: 60px;
+}
+
+/* 
+line-height -> this property is used to give space between lines
+*/
+#line-height{
+    line-height: 2.5;
+}
+
+/* 
+word-spacing -> this property is used to give space between words in a text.
+*/
+#word-spacing{
+    word-spacing: 20px;
+}
+
+/* 
+white-space -> this property is used to specify how content in an element should be displayed. It is used to handle white spaces inside an element.
+
+There are some property values that are used with CSS white-space property that oyu should know.
+
+normal: This is default value. In this, the text is wrapped when necessary, and the sequences of white space will collapse into a single whitespace.
+
+nowrap: Sequences of white spaces will collapsse into a single whitespace. In this value, the text will never wrap to the next line and only break when the <br> tag is used
+
+pre: Whitespace is preserved by the browser. It acts like an html <pre> tag. The text will only wrap on line breaks.
+ 
+*/
+.normal{
+    white-space: normal;
+}
+.nowrap{
+    white-space: nowrap;
+}
+.pre{
+    white-space: pre;
+}
+
+/* 
+text-shadow -> this property is used to add shadow to text.
+Each shadow is described by some combination of X-offsets & Y offsets from the text, blur radius, and color.
+
+text-shadow: offset-x | offset-y | blur-radius | color
+
+*/
+
+h1{
+    text-shadow: 2px 2px 2px red
+}
+
+/* 
+direction -> this property in css is a fundamental styling attribute used to control the text direction within an HTML element. 
+It plays a crucial role in rendering texxt correctly, especially when dealing with languages and scripts that have different writing directions. 
+This property offers two main values.
+1. ltr(Left-to-Right): This is the default value and is used for languages that are written from left to right such as English, Spanish or French.
+
+2. rtl(Right-to-Left): This value is employed for languages and scripts that are written from right to left, such as Arabic, Hebrew, or Persian.
+
+direction: ltr | rtl
+*/
+
+.ltr-text{
+    direction: ltr; /*Left-to-Right text Direction */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+.rtl-text{
+    direction: rtl; /*Left-to-Right text Direction */
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+/* 
+text-overflow -> this property in CSS is used to control how text that overflows the content area of an element is visually displayed.
+It is commonly used when you have text within an element that doesn't fit within it's designated space, such as in a fixed-width containeror a table cell, text-overflow is especially useful for handling long strings of text or overflowing content in a user-friendly way. 
+It can be clipped, display an ellipsis (...), or display a custom string.
+
+Both of the following properties are required for text-overflow.
+white-space: nowrap;
+overflow: hidden;
+
+
+text-overflow: clip | ellipsis | string
+*/
+
+div.a{
+    white-space: nowrap;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: clip;
+    border: 1px solid #000000;
+}
+div.b{
+    white-space: nowrap;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    border: 1px solid #000000;
+}
+div.a{
+    white-space: nowrap;
+    width: 150px;
+    overflow: hidden;
+    text-overflow: "---";
+    border: 1px solid #000000;
+}
+/* Note : The text-overflow: "string" only works in Firefox */
+
+/* 
+font-family -> this CSS property is used to provide a comma-separated list of font families. 
+It sets the font face for the text contentof an element.
+This property can hold multiple font names as a fallback system, i.e., if one font is unsupported in the browser, then other can be used. The different font-family iss used for making attractive web pages.
+Note: If the font name is more tham one word, it must be in quotation marks, like "Times New Roman".
+
+There are two types of font family names in CSS which are defined below
+
+family-name: It is the name of the font family such as Courier, Arial, Times, etc.
+generic-family: It iss the name off the generic family that includes five categories, which are "serif", "snas-serif", "cursive", "fantasy", and "monospace". It should be placed at last in the list of font family names.
+
+Syntax:
+font-family: family-name|generic-family|initial|inherit;
+
+Let's see the values of the font family property:
+family-name/generic-family: It is the list of font-family names and generic family names.
+initial-it is used to set the property to its default value.
+inherit: it is used to inherit the property from it's parent element.
+*/
+h1{
+    font-family: Arial, sans-serif;
+}
+
+/* 
+font-style -> this property species the style of the font, such as italic or normal
+*/
+
+.italic{
+    font-style: italic;
+}
+.normal{
+    font-style: normal;
+}
+
+/* 
+font-variant ->
+
+
+*/
+
+h1{
+    font-variant:normal;
+}
+h2{
+    font-variant:small-caps;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
