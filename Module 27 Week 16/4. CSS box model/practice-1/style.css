@@ -1,0 +1,46 @@
+/* .boxTwo{
+    padding-top: 10px;
+    padding-right: 20px;
+    padding-bottom: 30px;
+    padding-left: 40px;
+} */
+
+/* 
+Note: Using padding, we can specify all the padding properties in the one property.
+
+paddding: top | right | bottom | left;
+
+Observe the clockwise pattern
+*/
+
+
+/* Padding property with four values */
+
+/* .boxTwo{
+    padding: 10px 20px 30px 40px;
+} */
+
+/* padding property with three values */
+/* 
+padding: top | left and right | bottom;
+*/
+
+/* .boxTwo{
+    padding: 20px 40px 30px;
+} */
+
+/* padding property with two values */
+/* 
+padding: top and bottom | right and left;
+*/
+
+/* .boxTwo{
+    padding: 20px 40px;
+} */
+
+/* padding property with one value */
+/* 
+padding: top and bottom and right and left;
+
+All sides of an element have the same padding value
+*/

@@ -1,0 +1,102 @@
+/* border-style property */
+
+.none{
+    border-style: none;
+}
+.solid{
+    border-style: solid;
+}
+.dotted{
+    border-style: dotted;
+}
+.dashed{
+    border-style: dashed;
+}
+.double{
+    border-style: double;
+}
+.groove{
+    border-style: groove;
+}
+.ridge{
+    border-style: ridge;
+}
+.inset{
+    border-style: inset;
+}
+.outset{
+    border-style: outset;
+}
+.mixup{
+    border-top-style: dashed;
+    border-right-style: dotted;
+    border-bottom-style: solid;
+    border-left-style: inset;
+}
+
+/* border-width property */
+
+.thin{
+    border-style: solid;
+    border-width: thin;
+}
+.medium{
+    border-style: solid;
+    border-width: medium;
+}
+.thick{
+    border-style: solid;
+    border-width: thick;
+}
+.unitValue{
+    border-style: solid;
+    border-top-width: 2px;
+    border-top-width: 2pt;
+    border-bottom-width: 0.3cm;
+    border-left-width: 5px;
+}
+
+/* border-color */
+
+.boxOne{
+    border-color: black;
+    border-style: solid;
+}
+.boxTwo{
+    border-style: solid;
+    border-color: red blue green yellow;
+}
+
+/* border-radius */
+
+/* .box{
+    border-style: solid;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 70px;
+    border-bottom-right-radius: 40px;
+    border-bottom-left-radius: 10px;
+} */
+
+
+/* border-radius with four values */
+/* .box{
+    border-style: solid;
+    border-radius: 20px 70px 40px 10px;
+} */
+
+/* border-radius with two values */
+
+/* .box{
+    border-style: solid;
+    border-radius: 20px 40px;
+} */
+
+/* .box{
+    border-style: solid;
+    border-radius: 20px;
+} */
+/* The border property is a shorthand property for the following individual border properties
+border-width
+border-style (required)
+border-color */
+
