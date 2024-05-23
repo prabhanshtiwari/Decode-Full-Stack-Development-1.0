@@ -1,0 +1,73 @@
+.container{
+    border: solid 1px;
+}
+
+.text{
+    width: auto;
+}
+
+/* min-width property */
+
+span{
+    background-color: yellow;
+}
+.minWidth{
+    min-width: 500px;
+    display: inline-block;
+}
+
+/* max-width property */
+
+.maxWidth{
+    max-width: 150px;
+}
+
+/* height property */
+.text{
+    height: 55px;
+    border: 1px solid black;
+}
+
+/* min-height property */
+.minHeight{
+    min-height: 200px;
+}
+.yellow-bgc{
+    background-color: yellow;
+}
+
+/* mex-height Property */
+
+.maxHeight{
+    max-height: 50px;
+    border: 1px solid black;
+}
+
+/* understanding box sizing */
+
+.withoutPadding{
+    height: 50px;
+    width: 100px;
+    border: solid brown;
+}
+
+.withPadding{
+    height: 50px;
+    width: 100px;
+    border: solid purple;
+    padding: 1px;
+}
+
+/* example 2 */
+.withBoxSizing{
+    height: 100px;
+    width: 200px;
+    border: solid 2px;
+    padding: border-box;
+}
+.withoutBoxSizing{
+    height: 100px;
+    width: 200px;
+    border: solid 2px;
+    padding: 10px;
+}
