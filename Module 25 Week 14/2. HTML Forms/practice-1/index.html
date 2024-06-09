@@ -32,6 +32,74 @@
         <input type="submit" />
     </form>
 
+    <hr />
+
+    <form action="/signup_process" method="post">
+    <!-- Input and Label Tag -->
+    <label for="email">Enter Email</label>
+    <input type="email" name="email" id="emil" required>
+    </form>
+
+    <br />
+
+    <!-- Use of fieldset and legend tag -->
+
+    <fieldset>
+        <legend>sign up</legend>
+        <form action="/signup_process" method="post" name="sign-up">
+            <label for="username">Username:</label>
+            <br />
+            <input type="text" id="username" name="username" required>
+            <br />
+            <label for="email">Email:</label>
+            <br />
+            <input type="email" name="email" id="email" required>
+            <br />
+            <label for="password">Password:</label>
+            <br />
+            <input type="password" name="password" id="password" required>
+            <br />
+            <label for="confirm_password">Confirm Password:</label>
+            <br />
+            <input type="password" name="confirm_password" id="confirm_password" required>
+            <br>
+
+            <input type="submit" value="Sign Up">
+        </form>
+    </fieldset>
+
+    <!-- DOUBT -->
+    <!-- Use of output tag -->
+    <form id="add_form">
+        <input type="number" name="x" id="x" value="10" />+
+        
+        <input type="number" name="y" id="y" value="20" />=
+
+        <output name="result" for="x y" form="add_form"></output>
+    </form>
+    <hr />
+
+    <form action="/sign_up" method="post">
+        <label for="module">Module</label>
+        <br />
+        <input type="text" name="mudule" id="module" required>
+        <br />
+        <label for="topic">Topic</label>
+        <br />
+        <input type="text" name="topic" id="topic" required>
+        <br />
+        <label for="subtopic">Subtopic</label>
+        <br />
+        <input type="text" name="subtopic" id="subtopic" rquired>
+        <br />
+
+        <!-- Reset Button -->
+        <button type="reset">Reset Form</button>
+    </form>
+
+
+
+
     
 </body>
 </html>
