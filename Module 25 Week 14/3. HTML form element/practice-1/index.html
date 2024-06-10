@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <form action="/sign_up" method="post">
+        <label for="email">Enter Email:</label>
+        <input type="email" name="email" id="email" required>
+    </form>
+
+    <h2>Contact Information</h2>
+    <form>
+        <label for="name">Name:</label>
+        <input type="text" name="name" id="name" placeholder="Enter your name" value="John"><br /><br />
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" placeholder="Enter your email"><br /><br />
+
+        <label for="phone">Phone:</label>
+        <input type="tel" name="phone" id="phone" placeholder="Enter your phone number"><br /><br />
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <br /><br />
+
+    <form>
+        <label for="quantity">Quantity(only in dozens/ multiple of 12)</label>
+        <input type="number" name="quantity" id="quantity" step="12" />
+        <input type="submit" value="Submit" />
+    </form>
+
+    <br /><br />
+
+    <div id="autocomplete attribute">
+        <form autocomplete="on">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" /><br /><br />
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" autocomplete="off"><br /><br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <br />
+    <br />
+    <hr />
+
+    <div id="autofocus attribute">
+        <label for="username">Username:</label>
+        <input type="text" name="username" id="username" autofocus>
+    </div>
+    
+    <br />
+    <br />
+    <hr />
+
+
+    <div id="multiple attribute">
+        <form>
+            <label for="fileInput">Select multiple files:</label>
+            <input type="file" name="fileInput" id="fileInput" multiple>
+            <br />
+            <label for="email">Enter multiple emails separated by comma or semicolons:</label>
+            <input type="email" name="email" id="email" multiple>
+            <br />
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <br />
+    <br />
+    <hr />
+
+    <div>
+        <form>
+            <label for="readonlyInput">Read-only ORDER-ID:</label>
+            <input type="text" name="readonlyInput" id="readonlyInput" value="1245759584" readonly>
+        </form>
+    </div>
+
+    <br />
+    <br />
+    <hr />
+
+    <div>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" value="Prabhansh Tiwari" disabled>
+            <label for="age">Age:</label>
+            <input type="number" name="age" id="age">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <br />
+    <br />
+    <hr />
+
+    <div>
+        <form method="get" novalidate>
+            <label for="user_email">Email:</label>
+            <input type="email" name="user_email" id="user_email">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <br />
+    <br />
+    <hr />
+
+    <div>
+        <form>
+            <label for="email">Enter Email:</label>
+
+            <input type="number" name="salary" placeholder="Enter your Salary" value="100000" required />
+        </form>
+    </div>
+
+    <br />
+    <br />
+    <hr />
+
+    <div>
+        <form>
+            <label for="male">Male</label>
+            <input type="checkbox" name="male" id="male">
+            <label for="female">Female</label>
+            <input type="checkbox" name="female" id="female" checked>
+            <label for="other">Other</label>
+            <input type="checkbox" name="other" id="other">
+
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+</body>
+</html>
