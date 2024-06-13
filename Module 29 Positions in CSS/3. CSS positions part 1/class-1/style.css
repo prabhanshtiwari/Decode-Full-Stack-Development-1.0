@@ -1,0 +1,48 @@
+html{
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: inherit;
+}
+
+body {
+    padding:0;
+    margin:0;
+}
+
+.image {
+    background-attachment: fixed; /*This property is adding the parallax effect*/
+    background-size: cover;
+}
+
+.section-light {
+    background-color: #f4f4f4;
+    color: black;
+}
+
+.section-dark {
+    background-color: #282e34;
+    color: white;
+}
+
+.first-image {
+    background-image: url(images/1.jpg);
+    min-height: 500px;
+    opacity: 0.8;
+}
+
+.second-image {
+    background-image: url(images/2.jpg);
+    min-height: 500px;
+}
+.third-image {
+    background-image: url(images/3.jpg);
+    min-height: 500px;
+}
+
+.fourth-image {
+    background-image: url(images/1.jpg);
+    min-height: 500px;
+    opacity: 0.8;
+}
